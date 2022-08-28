@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Getting a reference to my external CSS -->
+    <link rel="stylesheet" href="css/utilities.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- here i am using font awesome for some css style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Getting a reference to my JavaScript function -->
+    <script type="text/javascript" src="function.js"></script> 
+    <title>Amazing Web Page</title>
+</head>
+<body>
+  <!-- Navbar element -->
+  <div class="navbar">
+    <div class="container flex lead">
+      <div class="Logo">Bradley Spiclin</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- head element for portfolio page -->
+  <section class="portfolio-head bg-primary py-1">
+    <div class="container grid">
+        <div>
+            <h1 class="md">My Portfolio</h1>
+            <p class="lead">
+              These projects show the development of my software skills and
+              my committment to lifelong learning. I am excited and eager to take on new projects so I can further
+              improve my technical skills. This portfolio demonstrates my passion for software development.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <!-- sub heading for the page -->
+  <section class="portfolio sub-head bg-light py-1">
+    <div class="container grid">
+        <div>
+            <h1 class="md">Marshalls Revenue</h1>
+            <p>
+              My first C# project was a console application for a user to input and calculate monthly revenue
+              on mural paintings. This was challenging for me as I had no prior knowledge of C# or programming
+              and was required to also handle input validation.
+            </p>
+            <a href="https://github.com/Larsa-mrp/BeginnerPrograms/tree/main/MarshallsRevenueSolution" class="btn btn-outline">GitHub Repo</a>
+        </div>
+        <img src="images/marshalls.PNG" width="500" height="300" alt="">
+    </div>
+    <div class="container grid">
+      <div>
+          <h1 class="md">Wage Calculator</h1>
+          <p>
+            Using Java I wrote my first object-orientated program which allows a user
+            to input employee details including employee number, wages, hours and taxable rate. 
+            The program calulates appropriate wages for each employee and displays all details.  
+          </p>
+          <a href="https://github.com/Larsa-mrp/BeginnerPrograms/tree/main/EmployeeWages" class="btn btn-outline">GitHub Repo</a>
+      </div>
+      <img src="images/constructions.png" width="500" height="300" alt="">
+  </div>
+  <div class="container grid">
+    <div>
+        <h1 class="md">Game Project</h1>
+        <p>
+          Unreal Engine 4 and C++ was the technology I used to create my first 3D game project. This was a very
+          steep learning curve, with advanced object-orientated principles and the use of pointers and delegates. 
+          This project took over 50 hours to complete providing me with valuable knowledge and experience.  
+        </p>
+
+    </div>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/DN1y-_XPe-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </section>
+
+  <section class="portfolio-head bg-primary py-1 bg-secondary">
+    <div class="container grid">
+        <div>
+            <p class="sm it">I hope you enjoyed reading about my projects.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- page footer with social media elements -->
+  <footer class="footer bg-dark py-2">
+    <div class="container grid grid-3">
+      <div>
+        <h1>Visit My Socials</h1>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Larsa-mrp"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/bradley-spiclin/"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://www.facebook.com/bradley.spiclin"><i class="fab fa-facebook fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>  
+</body>
+</html>

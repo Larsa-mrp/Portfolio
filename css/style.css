@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* variable to hold the primary colors for all components */
+/* we can call this up using background-color: var() */
+:root {
+  --primary-color: #0f3636;
+  --secondary-color: #168888;
+  --dark-color: #062e2e;
+  --light-color: #1d5a5a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* setting body, anchor, unordered list, headings and paragraph elements */
+body {
+  font-family: "lato", sans-serif;
+  color: black;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* setting img and iframe elements */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px white solid;
+}
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: white;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+/* My Languages section */
+
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.3s ease-in;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/* footer styling */
+/* I am using the hover to change color when mouse over */
+.footer .social a {
+  margin: 0 10px;
+}
+
+.fa-github:hover {
+  color: #000000;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+}
+
+.fa-instagram:hover {
+  color: #a72a45;
+}
+
+.fa-twitter:hover {
+  color: #1C9CEA;
+}
+
+/* setting the classes for portfolio page */
+.portfolio-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.portfolio-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.portfolio-main .card>i {
+  margin-right: 20px;
+}
+
+.portfolio-main .grid {
+  padding: 30px;
+}
+
+.portfolio-main .grid>*:first-child {
+  grid-column: 1 / span 3;
+}
+
+.portfolio-main .grid>*:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+/* adding responsive media queries */
+/* tablets and under 800px */
+@media (max-width: 800px) {
+
+  .grid,
+  .showcase .grid,
+  .portfolio .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .portfolio-head,
+  .portfolio-sub-head {
+    text-align: center;
+  }
+
+  .portfolio-head img,
+  .portfolio-sub-head img {
+    justify-self: center;
+  }
+}
+
+/* mobile devices */
+/* 500px and under */
+/* Here I am wrapping programming language icons down */
+@media (max-width: 500px) {
+  .navbar {
+    padding-top: 10px;
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase-form {
+    width: 300px;
+  }
+
+  .languages .flex {
+    flex-wrap: wrap;
+  }
+}

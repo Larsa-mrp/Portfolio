@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Getting a reference to my external CSS -->
+    <link rel="stylesheet" href="css/utilities.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- here i am using font awesome for some css style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Getting a reference to my JavaScript function -->
+    <script type="text/javascript" src="function.js"></script> 
+    <title>Bradley Spiclin</title>
+</head>
+<body>
+  
+  <!-- Navbar element -->
+  <div class="navbar">
+    <div class="container flex lead">
+      <div class="Logo">Bradley Spiclin</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section class="container"></section>
+
+  <!-- showcase section for index page introduction -->
+  <section class="showcase py-1">
+    <div class="container grid">
+      <div class="showcase-text">
+        <h1>About Me</h1>
+        <p>I have a passion for programming and problem-solving. When I wrote my first "Hello World" program I experienced wonder and excitement for writing code, resulting in focus and determination to acquire further knowledge and technical skills.
+          I'm energetic and highly motivated to pursue my dream career of becoming a Software Developer, demonstrated by my committment to lifelong learning.</p>
+          <br>
+        <a href="portfolio.html" class="btn btn-outline">My Projects</a>
+      </div>
+      <div class="showcase-form card">
+        <h2>Contact Me</h2>
+        <form action="http://formspree.io/bradleyspiclin@gmail.com" name="_replyto">
+          <div class="form-control">
+            <input type="text" name="name" 
+            placeholder="Name" required>
+          </div>
+          <div class="form-control">
+            <input type="text" name="name" 
+            placeholder="Company Name" required>
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" 
+            placeholder="Email" required>
+          </div>
+          <input type="email" value="Send" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- My languages sections - which programming languages I'm learning-->
+  <section class="languages">
+    <h2 class="md text-center my-2 py-5">
+        I'm currently learning...
+    </h2>
+    <div class="container flex">
+        <div class="card">
+            <h4>C#</h4>
+            <img src="images/CSharp.png" alt="">
+        </div>
+        <div class="card">
+            <h4>C++</h4>
+            <img src="images/cpp.png" alt="">
+          </div>
+          <div class="card">
+            <h4>HTML</h4>
+            <img src="images/html.png" alt="">
+          </div>
+          <div class="card">
+            <h4>CSS</h4>
+            <img src="images/css.png" alt="">
+          </div>
+          <div class="card">
+            <h4>JavaScript</h4>
+            <img src="images/javascript.png" alt="">
+          </div>
+    </div>
+</section>
+
+<!-- thank you section -->
+<section class="portfolio-head bg-primary py-2 bg-secondary">
+  <div class="container grid">
+      <div>
+          <a onclick="showDate()" class="btn btn-primary" >Show Date</a>
+          <p id="date"></p>
+          <p class="sm it">Thank you for visiting my web page, have a wonderful day.</p>
+      </div>   
+  </div>
+</section>
+
+  <!-- page footer with social media elements -->
+  <footer class="footer bg-dark py-2">
+    <div class="container grid grid-3">
+      <div>
+        <h1>Visit My Socials</h1>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Larsa-mrp"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/bradley-spiclin/"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://www.instagram.com/bradley.spicks/?hl=en"><i class="fab fa-instagram fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>  
+</body>
+</html>
