@@ -4,7 +4,7 @@
 /* we can call this up using background-color: var() */
 :root {
   --primary-color: #0f3636;
-  --secondary-color: #168888;
+  --secondary-color: #093535;
   --dark-color: #062e2e;
   --light-color: #1d5a5a;
 }
